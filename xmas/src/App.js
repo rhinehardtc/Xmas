@@ -16,8 +16,8 @@ function App() {
   const checkLogin = () => {
     if(login === false){
       return(
-        <form onSubmit={(e) => handleLogin(e)}>
-          <input className="name_input" type="text" value={user} onChange={(e) => handleInputChange(e)}></input>
+        <form onSubmit={(e) => user !== '' ? handleLogin(e) : alert("Surely you have a name...")}>
+          <input className="name_input" type="text" placeholder="enter name" value={user} onChange={(e) => handleInputChange(e)}></input>
           <button type="submit">Submit</button>
         </form>
       )
