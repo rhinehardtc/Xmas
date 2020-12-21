@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 function App() {
   const [user, setUser] = useState('');
-  const [login, setLogin] = useState(false)
+  const [login, setLogin] = useState(false);
 
   const handleInputChange = (e) => {
     setUser(e.target.value);
@@ -13,10 +13,15 @@ function App() {
     setLogin(true)
   }
 
+  const handleRejection = (e) => {
+    e.preventDefault()
+    alert("Surely you have a name...")
+  }
+
   const checkLogin = () => {
     if(login === false){
       return(
-        <form onSubmit={(e) => user !== '' ? handleLogin(e) : alert("Surely you have a name...")}>
+        <form onSubmit={(e) => user !== '' ? handleLogin(e) : handleRejection(e)}>
           <input className="name_input" type="text" placeholder="enter name" value={user} onChange={(e) => handleInputChange(e)}></input>
           <button type="submit">Submit</button>
         </form>
