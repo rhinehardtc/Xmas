@@ -5,11 +5,23 @@ function App() {
   const [login, setLogin] = useState(false);
 
   const handleInputChange = (e) => {
-    setUser(e.target.value);
+      e.target.value ? setUser(e.target.value[0].toUpperCase() + e.target.value.slice(1)) : setUser(e.target.value);
   }
 
   const handleLogin = (e) => {
     e.preventDefault();
+
+    switch (user){
+      case "Melissa": 
+        setUser("Mom")
+        break;
+      case "Ciara":
+        setUser("now Brabe")
+        break;
+      default:
+        setUser(user);
+    };
+
     setLogin(true)
   }
 
@@ -23,7 +35,7 @@ function App() {
       return(
         <form onSubmit={(e) => user !== '' ? handleLogin(e) : handleRejection(e)}>
           <input className="name_input" type="text" placeholder="enter name" value={user} onChange={(e) => handleInputChange(e)}></input>
-          <button type="submit">Submit</button>
+          <button className="submit_name_btn" type="submit">Submit</button>
         </form>
       )
     } else {
