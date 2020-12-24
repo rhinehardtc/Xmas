@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/xmas/static/css/main.a129ab07.chunk.css",
-    "main.js": "/xmas/static/js/main.fbaa7ee9.chunk.js",
-    "main.js.map": "/xmas/static/js/main.fbaa7ee9.chunk.js.map",
-    "runtime-main.js": "/xmas/static/js/runtime-main.d9bd30b2.js",
-    "runtime-main.js.map": "/xmas/static/js/runtime-main.d9bd30b2.js.map",
-    "static/js/2.077a2465.chunk.js": "/xmas/static/js/2.077a2465.chunk.js",
-    "static/js/2.077a2465.chunk.js.map": "/xmas/static/js/2.077a2465.chunk.js.map",
-    "static/js/3.8d9e0233.chunk.js": "/xmas/static/js/3.8d9e0233.chunk.js",
-    "static/js/3.8d9e0233.chunk.js.map": "/xmas/static/js/3.8d9e0233.chunk.js.map",
-    "index.html": "/xmas/index.html",
-    "static/css/main.a129ab07.chunk.css.map": "/xmas/static/css/main.a129ab07.chunk.css.map",
-    "static/js/2.077a2465.chunk.js.LICENSE.txt": "/xmas/static/js/2.077a2465.chunk.js.LICENSE.txt"
+    "main.css": "/Xmas/static/css/main.a129ab07.chunk.css",
+    "main.js": "/Xmas/static/js/main.fbaa7ee9.chunk.js",
+    "main.js.map": "/Xmas/static/js/main.fbaa7ee9.chunk.js.map",
+    "runtime-main.js": "/Xmas/static/js/runtime-main.ec40e81b.js",
+    "runtime-main.js.map": "/Xmas/static/js/runtime-main.ec40e81b.js.map",
+    "static/js/2.077a2465.chunk.js": "/Xmas/static/js/2.077a2465.chunk.js",
+    "static/js/2.077a2465.chunk.js.map": "/Xmas/static/js/2.077a2465.chunk.js.map",
+    "static/js/3.8d9e0233.chunk.js": "/Xmas/static/js/3.8d9e0233.chunk.js",
+    "static/js/3.8d9e0233.chunk.js.map": "/Xmas/static/js/3.8d9e0233.chunk.js.map",
+    "index.html": "/Xmas/index.html",
+    "static/css/main.a129ab07.chunk.css.map": "/Xmas/static/css/main.a129ab07.chunk.css.map",
+    "static/js/2.077a2465.chunk.js.LICENSE.txt": "/Xmas/static/js/2.077a2465.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.d9bd30b2.js",
+    "static/js/runtime-main.ec40e81b.js",
     "static/js/2.077a2465.chunk.js",
     "static/css/main.a129ab07.chunk.css",
     "static/js/main.fbaa7ee9.chunk.js"
