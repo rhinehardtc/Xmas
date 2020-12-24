@@ -16,18 +16,24 @@ function App() {
       case "Melissa": 
         setUser("Mom")
         break;
+      case "Randal": 
+        setUser("Dad")
+        break;
+      case "Randy": 
+        setUser("Dad")
+        break;
       case "Jacob": 
         setUser("Girbin Zambeeze la Ploop the Rhinocerus Pinch")
-      break;
+        break;
       case "Jake": 
         setUser("Girbin Zambeeze la Ploop the Rhinocerus Pinch")
-      break;
+        break;
       case "Joey": 
         setUser("Josh")
-      break;
+        break;
       case "Joseph": 
         setUser("Joshua")
-      break;
+        break;
       case "Ciara":
         setUser("now Brabe")
         break;
@@ -35,7 +41,13 @@ function App() {
         setUser(user);
     };
 
-    setLogin(true)
+    const today = new Date();
+
+    if(today.getMonth() + 1 !== 12 || today.getDate() !== 25){
+      setUser("It's not Christmas yet");
+    } else {
+      setLogin(true)
+    }
   }
 
   const handleRejection = (e) => {
@@ -46,10 +58,12 @@ function App() {
   const checkLogin = () => {
     if(login === false){
       return(
-        <form onSubmit={(e) => user !== '' ? handleLogin(e) : handleRejection(e)}>
-          <input className="name_input" type="text" placeholder={placeholder} value={user} onChange={(e) => handleInputChange(e)}></input>
-          <button className="submit_name_btn" type="submit">Submit</button>
-        </form>
+        <div className="form_div">
+          <form onSubmit={(e) => user !== '' ? handleLogin(e) : handleRejection(e)}>
+            <input className="name_input" type="text" placeholder={placeholder} value={user} onChange={(e) => handleInputChange(e)}></input>
+            <button className="submit_name_btn" type="submit">Submit</button>
+          </form>
+        </div>
       )
     } else {
       return(
